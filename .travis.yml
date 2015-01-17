@@ -2,8 +2,8 @@ language: ruby
 cache: bundler
 
 rvm:
+  - 1.9
   - 2.2
-  - rbx-2
 
 env:
   matrix:
