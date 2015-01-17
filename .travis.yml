@@ -5,3 +5,6 @@ notifications:
   webhooks:
     urls:
       - http://104.236.53.210:9292/tci
+
+before_script:
+- env
