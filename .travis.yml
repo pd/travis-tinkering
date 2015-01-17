@@ -1,0 +1,20 @@
+language: ruby
+cache: bundler
+
+rvm:
+  - 2.2
+  - rbx-2
+
+env:
+  matrix:
+    - SUITE=foo
+    - SUITE=bar
+  global:
+    - SOME_GLOBAL_VAR=on
+
+script: bundle exec rake $SUITE
+
+notifications:
+  webhooks:
+    urls:
+      - http://104.236.53.210:9292/tci
