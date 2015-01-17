@@ -1,31 +1,6 @@
 language: ruby
 cache: bundler
 
-rvm:
-  - 1.9
-  - 2.2
-
-env:
-  matrix:
-    - SUITE=foo
-    - SUITE=bar
-  global:
-    - SOME_GLOBAL_VAR=on
-
-script: bundle exec rake $SUITE
-
-after_success:
-- echo after_success
-- env | grep TRAVIS
-
-after_failure:
-- echo after_failure
-- env | grep TRAVIS
-
-after_script:
-- echo after_script
-- env | grep TRAVIS
-
 notifications:
   webhooks:
     urls:
