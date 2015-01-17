@@ -1,12 +1,2 @@
 language: ruby
 cache: bundler
-notifications:
-  webhooks:
-    urls:
-    - http://104.236.53.210:9292/tci
-before_script:
-- env
-env:
-  global:
-  - secure: IzSA62YPidQQEw5JV+e/iMuJaolXvm9BtwR+rt3DJMx3b5O24EARs+FPXLWsS/x4ycKZ/yjhezuPJG1oFKxfhAGyUHG93EjgEXLlyGYBpEpRVcnhZEklUwtt2hO/6rSIVjanXByG9UfL8wiORJsIjxeP4sJcm+VJmUNiSK6hqyc=
-  - secure: Xf35tW9kdgboqfNO9a+l17X9QY3+NoNN3Ym0X6IJVpX/DyB/3MTeqb+m81nO5MSDwMdtXLBXRNLFc0n7CHvUZpxfudVyQSPonw4x2cA1XcqVpAo9+0MgJ13PzyKJMuCbm21DC36zaZsb4EDJ//Bc6LS8N/TrrM8oPW//EhupfIU=
