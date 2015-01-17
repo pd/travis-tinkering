@@ -12,6 +12,9 @@ env:
   global:
     - SOME_GLOBAL_VAR=on
 
+before_script:
+- env
+
 script: bundle exec rake $SUITE
 
 notifications:
